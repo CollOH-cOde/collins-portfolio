@@ -53,19 +53,28 @@ My Web/
 - **LinkedIn** · https://www.linkedin.com/in/collins-kinuthia-09315b2aa/
   (footer social icon)
 
-## Before you publish · remaining to-dos
+## Status · live
+
+- **Site** · https://collins-kinuthia.netlify.app (hosted on Netlify, free tier)
+- **Source** · https://github.com/CollOH-cOde/collins-portfolio (this repo)
+- **Custom 404** · included, served automatically for wrong URLs
+- **Share banner** · `assets/og-cover.png`, wired to `og:image` / `og:url`
+  for WhatsApp, Telegram and X link previews
+
+## Remaining side quests
 
 1. **Blog cell** · the footer `blog → wip.md` cell is a placeholder; point it
    wherever you want or delete the row.
-2. **og:image** · already pointed at the final address
-   `https://collins-kinuthia.netlify.app/assets/og-cover.png`. Only needs
-   changing if the site ends up under a different name (WhatsApp only
-   reads absolute image URLs).
-3. **Repo READMEs** · open `github-readmes/`, pick the matching repo file,
-   and paste its contents into that repo on GitHub (Add file · Create new
-   file · name it `README.md` · paste · commit). A screenshot of each
-   project added to the README makes it even better.
+2. **Repo READMEs** · open `github-readmes/`, pick the matching repo file and
+   paste its contents into that repo on GitHub (Add file · Create new file ·
+   name it `README.md` · paste · commit). A screenshot of each project makes
+   it even better.
+3. Someday · a "download my resume" button, once a CV PDF exists.
 
-Deploy anywhere static hosting works (GitHub Pages, Netlify, Vercel):
-upload the folder as-is. GitHub Pages also picks up `404.html`
-automatically.
+## Updating the site
+
+1. Edit the files (or ask for changes).
+2. Push new commits here; this repo is the source of truth.
+3. Redeploy: drag the updated `collins-site` folder onto the Netlify
+   **Deploys** tab, or link this repo in Netlify (Site configuration →
+   Build & deploy → link repository) so every push goes live automatically.
