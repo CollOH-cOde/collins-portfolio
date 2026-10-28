@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1200" />
+  <title>og card · Collins</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Social share card: screenshot this page at 1200x630 to make assets/og-cover.png */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      font-family: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, Menlo, monospace;
+    }
+    body {
+      position: relative;
+      background: hsl(0, 20%, 99%);
+      color: hsl(0, 5%, 12%);
+    }
+    .brand {
+      position: absolute;
+      top: 48px;
+      left: 56px;
+      border: 2px solid hsl(30, 2%, 81%);
+      border-radius: 6px;
+      padding: 10px 22px;
+      font-weight: 600;
+      font-size: 21px;
+    }
+    .avail {
+      position: absolute;
+      top: 58px;
+      right: 60px;
+      color: hsl(145, 55%, 38%);
+      font-size: 17px;
+    }
+    .terminal {
+      position: absolute;
+      left: 96px;
+      right: 96px;
+      top: 168px;
+      background: hsl(0, 9%, 7%);
+      border-radius: 12px;
+      padding: 38px 48px 26px;
+      color: hsl(0, 4%, 71%);
+      font-size: 24px;
+      line-height: 1.75;
+    }
+    .hi { color: hsl(0, 20%, 99%); }
+    .dim { color: hsl(0, 3%, 43%); }
+    .ok { color: hsl(145, 60%, 48%); }
+    .marker {
+      margin-top: 20px;
+      padding-top: 16px;
+      border-top: 1px solid hsla(0, 0%, 100%, 0.08);
+      color: hsl(0, 3%, 43%);
+      font-size: 19px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .marker strong { color: hsl(0, 20%, 99%); font-weight: 600; }
+    .hand {
+      position: absolute;
+      bottom: 34px;
+      right: 60px;
+      color: hsl(0, 1%, 60%);
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="brand">collins</div>
+  <div class="avail">● available for work</div>
+
+  <div class="terminal">
+    <div><span class="hi">$ whois collins</span></div>
+    <div>→ full-stack developer (Kenya)</div>
+    <div><span class="hi">$ cat stack.txt</span></div>
+    <div>JavaScript · TypeScript · React · Node.js · MongoDB</div>
+    <div><span class="hi">$ status --now</span></div>
+    <div><span class="ok">●</span> available for work · <span class="hi">wa.me/254723866363</span></div>
+    <div class="marker"><span class="ok">▪</span> <strong>build</strong> · github.com/CollOH-cOde · 12+ repos</div>
+  </div>
+
+  <div class="hand">no template · written by hand</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 · Page not found · Collins</title>
+  <meta name="description" content="Page not found. Collins is a full-stack web developer; the page you wanted does not exist, but he does." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    /* Same theme mechanics as the main site, kept inline so 404.html survives on its own */
+    (function () {
+      var root = document.documentElement;
+      try { if (localStorage.getItem("colloh-theme") === "dark") root.setAttribute("data-theme", "dark"); } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <main class="section" style="min-height: 86vh;">
+    <div class="container" style="padding-top: 6.5rem; text-align: center;">
+      <span style="color: var(--text-weak); font-size: 0.8125rem; letter-spacing: 0.2em;">$ collins · not found</span>
+
+      <div class="terminal" style="max-width: 620px; margin: 2.2rem auto 0;">
+        <div class="terminal-body" style="min-height: 0; font-size: 1rem; text-align: left; white-space: normal;">
+          <div style="color: hsl(0, 20%, 99%);">$ cd portfolio/this-page</div>
+          <div style="color: hsl(0, 3%, 43%);">✗ error 404 · the page you wanted does not exist</div>
+          <div style="color: hsl(0, 20%, 99%);">$ echo "wrong door, right developer"</div>
+          <div style="color: hsl(0, 4%, 71%);">wrong door, right developer</div>
+        </div>
+        <div class="terminal-marker" style="text-align: left;">
+          <span aria-hidden="true">▪</span> 404 · collins · <strong>page-not-found</strong>
+        </div>
+      </div>
+
+      <div class="hero-cta-row" style="justify-content: center; margin-top: 2.2rem;">
+        <a class="btn btn-strong" href="/index.html">take me home →</a>
+        <a class="btn btn-ghost" href="https://wa.me/254723866363" target="_blank" rel="noopener">chat on WhatsApp</a>
+      </div>
+
+      <p style="color: var(--text-weak); font-size: 0.875rem; margin-top: 2.5rem;">
+        broken link? ping me and I will fix it · github.com/CollOH-cOde
+      </p>
+    </div>
+  </main>
+</body>
+</html>

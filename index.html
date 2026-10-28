@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collins · Full Stack Developer (JS · React · Node.js · MongoDB)</title>
+  <meta name="description" content="Collins (CollOH-cOde) is a full-stack web developer working with JavaScript, TypeScript, React, Node.js and MongoDB. Websites, web apps and REST APIs, built and shipped." />
+  <meta name="author" content="Collins (CollOH-cOde)" />
+  <meta property="og:title" content="Collins · Full Stack Developer" />
+  <meta property="og:description" content="Full-stack web developer: JavaScript, TypeScript, React, Node.js, MongoDB. Building things that actually work." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://collins-kinuthia.netlify.app/" />
+  <meta property="og:image" content="https://collins-kinuthia.netlify.app/assets/og-cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#home" class="wordmark" aria-label="collins · home">
+        <span class="wordmark-box">collins</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#about" data-nav>About</a>
+        <a href="#services" data-nav>Services</a>
+        <a href="#projects" data-nav>Projects</a>
+        <a href="#faq" data-nav>FAQ</a>
+        <a href="#contact" data-nav>Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+          <span class="icon-sun" aria-hidden="true">◐</span>
+          <span class="icon-moon" aria-hidden="true">◑</span>
+        </button>
+        <a href="#contact" class="btn btn-strong header-cta">Hire me</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="menu-bars" aria-hidden="true">≡</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu overlay -->
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Mobile">
+      <a href="#about" data-mobile-nav>About</a>
+      <a href="#services" data-mobile-nav>Services</a>
+      <a href="#projects" data-mobile-nav>Projects</a>
+      <a href="#faq" data-mobile-nav>FAQ</a>
+      <a href="#contact" data-mobile-nav>Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-strong" data-mobile-nav>→ hire me</a>
+  </div>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero">
+      <div class="container hero-head">
+        <img class="avatar" src="assets/collins-avatar.png" alt="Collins, CollOH-cOde on GitHub" width="96" height="96" />
+        <p class="status-pill"><span class="dot" aria-hidden="true"></span> available for work</p>
+        <p class="eyebrow">HI, I'M COLLINS · @COLLOH-CODE</p>
+        <h1 class="hero-title">
+          <span class="hero-line-strong">Full-Stack Developer</span>
+          <span class="hero-line-weak">building things that actually work</span>
+        </h1>
+        <p class="hero-copy">
+          Have an idea? I turn it into a working product: a website,
+          a web app or the API powering it. I work with JavaScript,
+          TypeScript, React, Node.js and MongoDB, so what you get is
+          one person responsible for the whole thing, front to back.
+        </p>
+        <ul class="pill-row" aria-label="Core stack">
+          <li class="pill">JavaScript</li>
+          <li class="pill">TypeScript</li>
+          <li class="pill">React</li>
+          <li class="pill">Node.js</li>
+          <li class="pill">MongoDB</li>
+          <li class="pill open-pill">open to work</li>
+        </ul>
+        <div class="hero-cta-row">
+          <a href="#contact" class="btn btn-strong">hire me →</a>
+          <a href="#projects" class="btn btn-ghost">view projects</a>
+        </div>
+      </div>
+
+      <!-- Terminal showcase (dark in both themes) -->
+      <div class="container terminal-wrap">
+        <div class="terminal" role="img" aria-label="Terminal transcript introducing Collins">
+          <div class="terminal-body" id="terminal-body" data-type>
+            <span class="t-line"></span>
+          </div>
+          <div class="terminal-marker">
+            <span class="t-sq" aria-hidden="true">▪</span>
+            <strong>build</strong> · collins · full-stack
+          </div>
+        </div>
+      </div>
+
+      <!-- Bracket list, terminal style -->
+      <div class="container brack-list-wrap">
+        <ul class="brack-list">
+          <li><span class="brack">[✱]</span> <strong>multi-repo</strong>&nbsp;&nbsp;12 public repositories and counting</li>
+          <li><span class="brack">[✱]</span> <strong>full-stack</strong>&nbsp;&nbsp;frontend, backend and the glue in between</li>
+          <li><span class="brack">[✱]</span> <strong>ship-first</strong>&nbsp;&nbsp;deploying real products, not just tutorials</li>
+          <li><span class="brack">[✱]</span> <strong>open to work</strong>&nbsp;&nbsp;jobs, freelance and remote contracts</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section">
+      <div class="container">
+        <p class="section-label">01 · about</p>
+        <h2 class="section-title">A developer who breaks stuff<br />to fix it better.</h2>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              I'm Collins, a full-stack developer from Kenya working almost
+              entirely in the JavaScript ecosystem. On GitHub I go by
+              <a href="https://github.com/CollOH-cOde" target="_blank" rel="noopener">@CollOH-cOde</a>,
+              where I keep a growing collection of builds: storefronts,
+              project platforms, a recipe site and yes, plenty of practice
+              collections too.
+            </p>
+            <p>
+              My day-to-day is JS, TypeScript, React, Node.js and MongoDB,
+              the classic MERN picture. I care about systems that actually
+              hold up outside the demo: sane structure, honest error
+              handling, pages that load fast on slow connections.
+            </p>
+            <p>
+              When something I built misbehaves, I take it apart until I
+              understand why, then put it back together stronger. Semicolons
+              are non-negotiable. Console logs are temporary. Learning is not.
+            </p>
+          </div>
+          <ul class="fact-card">
+            <li><span class="k">handle</span><span class="v">@CollOH-cOde</span></li>
+            <li><span class="k">focus</span><span class="v">full-stack · MERN</span></li>
+            <li><span class="k">frontend</span><span class="v">JS · TS · React</span></li>
+            <li><span class="k">backend</span><span class="v">Node.js · Express</span></li>
+            <li><span class="k">data</span><span class="v">MongoDB · MySQL</span></li>
+            <li><span class="k">location</span><span class="v">somewhere between 404 and 200 OK</span></li>
+            <li><span class="k">status</span><span class="v v-open">● available for work</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section id="services" class="section">
+      <div class="container">
+        <p class="section-label">02 · services</p>
+        <h2 class="section-title">What I do</h2>
+        <p class="section-lead">From first commit to final deployment: complete digital builds, not just front pages.</p>
+
+        <div class="cards-3">
+          <article class="card">
+            <p class="card-kicker">$ 01 · web</p>
+            <h3>Website Design &amp; Development</h3>
+            <p class="card-copy">
+              Responsive websites for businesses, personal brands and
+              ideas that need to exist online: clean markup, quick load
+              times and SEO that doesn't rely on tricks.
+            </p>
+            <ul class="checklist">
+              <li>Business &amp; portfolio sites</li>
+              <li>Landing pages that convert</li>
+              <li>SEO &amp; performance-minded by default</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <p class="card-kicker">$ 02 · apps</p>
+            <h3>Web Application Development</h3>
+            <p class="card-copy">
+              Full-stack apps in the MERN shape: React on the front,
+              Node.js behind it, MongoDB underneath. Auth, dashboards,
+              roles and the flows your users actually need.
+            </p>
+            <ul class="checklist">
+              <li>Custom web apps &amp; dashboards</li>
+              <li>Authentication &amp; user management</li>
+              <li>Scalable, maintainable architecture</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <p class="card-kicker">$ 03 · apis</p>
+            <h3>API &amp; Backend Development</h3>
+            <p class="card-copy">
+              REST APIs and backend services with Node.js and Express:
+              database design, integrations, payments wiring and
+              deployment on cloud platforms.
+            </p>
+            <ul class="checklist">
+              <li>REST API design &amp; build-out</li>
+              <li>Database design (MongoDB, MySQL)</li>
+              <li>Third-party integrations &amp; payments</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="section-label">03 · projects</p>
+        <h2 class="section-title">Featured builds</h2>
+        <p class="section-lead">Real repositories, live on GitHub, built, broken and rebuilt by me.</p>
+
+        <div class="cards-3">
+          <article class="card project-card">
+            <p class="lang-tag">JavaScript</p>
+            <h3>R-M-Store</h3>
+            <p class="card-copy">A store project. JavaScript end to end, built to practice real e-commerce structure and keep the habit of shipping.</p>
+            <a class="card-link" href="https://github.com/CollOH-cOde/R-M-Store" target="_blank" rel="noopener">view source ↗</a>
+          </article>
+          <article class="card project-card">
+            <p class="lang-tag">JavaScript</p>
+            <h3>R-M-Project</h3>
+            <p class="card-copy">The sibling build to R-M-Store: more JavaScript, more decisions, fewer blank stares at error messages.</p>
+            <a class="card-link" href="https://github.com/CollOH-cOde/R-M-Project" target="_blank" rel="noopener">view source ↗</a>
+          </article>
+          <article class="card project-card">
+            <p class="lang-tag">TypeScript</p>
+            <h3>tuwaze</h3>
+            <p class="card-copy">A TypeScript build. Types included, so the bugs are at least polite about it.</p>
+            <a class="card-link" href="https://github.com/CollOH-cOde/tuwaze" target="_blank" rel="noopener">view source ↗</a>
+          </article>
+          <article class="card project-card">
+            <p class="lang-tag">HTML</p>
+            <h3>ElimuPay</h3>
+            <p class="card-copy">Elimu means education: a payments for learning site concept built with plain HTML and CSS fundamentals.</p>
+            <a class="card-link" href="https://github.com/CollOH-cOde/ElimuPay" target="_blank" rel="noopener">view source ↗</a>
+          </article>
+          <article class="card project-card">
+            <p class="lang-tag">HTML</p>
+            <h3>C-K-Collection.</h3>
+            <p class="card-copy">A curated collection build, where practice pieces live until they evolve into something bigger.</p>
+            <a class="card-link" href="https://github.com/CollOH-cOde/C-K-Collection." target="_blank" rel="noopener">view source ↗</a>
+          </article>
+          <article class="card project-card">
+            <p class="lang-tag">HTML</p>
+            <h3>Recipe-assignment</h3>
+            <p class="card-copy">A recipe site. Proof that even a simple assignment deserves decent structure and a tidy README.</p>
+            <a class="card-link" href="https://github.com/CollOH-cOde/Recipe-assignment" target="_blank" rel="noopener">view source ↗</a>
+          </article>
+        </div>
+
+        <div class="archive-row">
+          <p class="archive-label">// also on GitHub</p>
+          <a href="https://github.com/CollOH-cOde?tab=repositories" target="_blank" rel="noopener">see all 12 repositories ↗</a>
+        </div>
+        <ul class="archive-list">
+          <li><a href="https://github.com/CollOH-cOde/kinut" target="_blank" rel="noopener">kinut</a></li>
+          <li><a href="https://github.com/CollOH-cOde/class-project" target="_blank" rel="noopener">class-project</a><span class="lang-mini">TypeScript</span></li>
+          <li><a href="https://github.com/CollOH-cOde/Collins-Collection" target="_blank" rel="noopener">Collins-Collection</a></li>
+          <li><a href="https://github.com/CollOH-cOde/Intro-section" target="_blank" rel="noopener">Intro-section</a></li>
+          <li><a href="https://github.com/CollOH-cOde/html_files" target="_blank" rel="noopener">html_files</a></li>
+          <li><a href="https://github.com/CollOH-cOde/sample-project" target="_blank" rel="noopener">sample-project</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="section cta-band">
+      <div class="container">
+        <p class="status-pill"><span class="dot" aria-hidden="true"></span> available for work</p>
+        <h2 class="section-title">Let's build your next<br />website or web app.</h2>
+        <p class="section-lead">
+          I'm open to full-time roles, freelance projects and remote
+          contracts. If you need a developer who ships real products,
+          let's talk.
+        </p>
+        <div class="hero-cta-row">
+          <a class="btn btn-strong" href="https://wa.me/254723866363?text=Hi%20Collins!%20I%27d%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener">chat on WhatsApp →</a>
+          <a class="btn btn-ghost" href="mailto:kinuthiakipkoech@gmail.com">email me directly</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section id="faq" class="section">
+      <div class="container faq-grid">
+        <div class="faq-intro">
+          <p class="section-label">04 · faq</p>
+          <h2 class="section-title">Frequently asked<br />questions</h2>
+          <p class="section-lead">
+            The things people ask most before starting a digital project
+            with a developer. Anything missing? Ask directly.
+          </p>
+          <a class="btn btn-strong" href="https://wa.me/254723866363" target="_blank" rel="noopener">ask me on WhatsApp ↗</a>
+        </div>
+
+        <div class="faq-list" id="faq-list">
+          <details class="faq-item">
+            <summary>Who is Collins? <span class="faq-plus" aria-hidden="true">+</span></summary>
+            <div class="faq-answer">
+              <p>A full-stack developer from Kenya building in the JavaScript
+              ecosystem: JavaScript, TypeScript, React, Node.js, Express and
+              MongoDB, with 12 public repositories on GitHub under
+              @CollOH-cOde. I build websites, web apps and REST APIs, and I'm
+              available for jobs, freelance work and remote contracts.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Why should you hire a developer? <span class="faq-plus" aria-hidden="true">+</span></summary>
+            <div class="faq-answer">
+              <p>Because manual and repetitive work belongs in a system, not in
+              your day. A website that wins customers, an app that handles
+              bookings or inventory, an API that connects your tools. These
+              keep working after you've gone to bed. Hiring a developer is
+              investing in fewer errors and a business that doesn't stop when
+              you do.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>What does a digital presence actually mean? <span class="faq-plus" aria-hidden="true">+</span></summary>
+            <div class="faq-answer">
+              <p>It's what people find before they ever contact you: a
+              website that loads fast and says clearly what you do, profiles
+              that are consistent, and proof of your work. Social media
+              alone isn't a presence; your own space online is the baseline
+              for trust.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>How do we start a project together? <span class="faq-plus" aria-hidden="true">+</span></summary>
+            <div class="faq-answer">
+              <p>Reach out through GitHub with what you're trying to build.
+              We'll define the scope, the stack and the timeline, then I get
+              to work with regular check-ins so you always know what's
+              shipped and what's next. Small projects start small; nothing
+              needs to be perfect at the start.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer id="contact" class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="wordmark-box">collins</a>
+          <p>Collins, full-stack developer.<br />JavaScript · TypeScript · React · Node.js · MongoDB</p>
+          <p class="footer-dim">somewhere between 404 and 200 OK · open for jobs, freelance &amp; remote work</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#faq">FAQ</a>
+          <a href="#home">Home</a>
+        </nav>
+        <div class="footer-socials">
+          <a href="https://github.com/CollOH-cOde" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+          </a>
+          <a href="https://wa.me/254723866363" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.8L4 20.5l4.4-1.1A8.5 8.5 0 1 0 12 3.5Z"/><path d="M9.2 8.3c-.5 1-.3 2.2.7 3.6 1.1 1.5 2.1 2.3 3.6 3 .8.3 1.7.2 2.1-.5l.4-.7-1.9-1.2-.7.7c-1-.4-2-1.3-2.5-2.3l.6-.7-1.2-1.8-.9.4Z" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="mailto:kinuthiakipkoech@gmail.com" aria-label="Email">✉</a>
+          <a href="https://x.com/col1oh" target="_blank" rel="noopener" aria-label="X (Twitter)">✕</a>
+          <a href="https://www.linkedin.com/in/collins-kinuthia-09315b2aa/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+
+      <ul class="footer-cells">
+        <li><span class="k">blog</span><a href="#" data-editable-link="blog">wip.md</a></li>
+        <li><span class="k">whatsapp</span><a href="https://wa.me/254723866363" target="_blank" rel="noopener">+254 723 866 363</a></li>
+        <li><span class="k">email</span><a href="mailto:kinuthiakipkoech@gmail.com">kinuthiakipkoech@gmail.com</a></li>
+        <li><span class="k">github</span><a href="https://github.com/CollOH-cOde" target="_blank" rel="noopener">CollOH-cOde [12]</a></li>
+      </ul>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Collins · All rights reserved.</p>
+        <p class="footer-dim">written by hand · hosted from <code>My&nbsp;Web/</code></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
